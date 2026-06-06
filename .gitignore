@@ -53,3 +53,14 @@ node_modules/
 # Temp
 temp/
 reports/
+
+# Data (credential databases, etc.)
+data/
+
+# Screenshots and binary files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.docx
+*.pdf

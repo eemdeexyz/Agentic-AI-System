@@ -1,35 +1,33 @@
-# 🤖 Agentic AI System — Advanced Multi-Agent Intelligence Platform
+# 🤖 Agentic AI System — Multi-Agent Framework (Archived)
 
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](LICENSE)
 [![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)](https://flask.palletsprojects.com/)
-[![AI](https://img.shields.io/badge/AI-GPT_Powered-purple.svg)](https://openai.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> The World's First Production-Ready Multi-Agent AI System with Real Agent Creation
+> ⚠️ This is an archived/experimental project. It is not production-ready and is provided for educational purposes only.
 
 ---
 
 ## 🇬🇧 English
 
-**Agentic AI System** is a breakthrough multi-agent intelligence platform that not only coordinates existing agents but **dynamically creates new, fully functional AI agents**. The system combines advanced AI technology, military-grade security, and enterprise deployment capabilities in one revolutionary platform.
+**Agentic AI System** is an experimental multi-agent framework built with Python and Flask. It explores concepts of dynamic agent creation, credential management, and multi-agent coordination. This is a learning/research project and should not be used in production environments.
 
-### Breakthrough Features
-- 🤖 **Real AI Agent Creation** — Creates actual working AI agents dynamically
-- 🔒 **Military-Grade Security** — AES-256 encryption for credential management
-- 🌐 **Advanced Web Automation** — Automated login/registration to any website
-- 🧠 **Persistent Memory System** — SQLite with knowledge enrichment from external APIs
-- 🚀 **Multi-Platform Deployment** — Ready for 7+ major platforms
-- 🔌 **Real-time Platform Integrations** — GitHub, Google Services, OpenAI, HuggingFace
-- 📊 **Enterprise Monitoring** — Real-time analytics and system health monitoring
+### Features
+- 🤖 **Agent Framework** — Base classes and factory patterns for creating AI agents
+- 🔒 **Credential Manager** — Encrypted credential storage using Fernet/AES (requires master password env var)
+- 🌐 **Web Automation** — Experimental web login/registration automation module
+- 🧠 **Persistent Memory** — SQLite-based storage with knowledge enrichment
+- 📊 **Web Dashboard** — Flask-based UI for monitoring and managing agents
+- 🔌 **Platform Integrations** — Stubs for GitHub, Google, OpenAI, HuggingFace
 
-### Specialized Agents (10+)
+### Specialized Agents
 | Agent | Role |
 |-------|------|
 | 🎯 Agent Base | Master Controller & Task Coordination |
 | 🚀 Launcher Agent | System Orchestrator |
-| 🏭 Dynamic Agent Factory | Spawns specialized agents on demand |
-| 🤖 Advanced Agent Creator | Creates actual working AI agents |
-| 🌐 Web Automation Agent | Automated login/registration |
+| 🏭 Dynamic Agent Factory | Spawns agents on demand |
+| 🤖 Advanced Agent Creator | Creates AI agents programmatically |
+| 🌐 Web Automation Agent | Automated web interactions |
 | 📊 Agent 02 (Meta-Spawner) | Performance Monitor |
 | 📋 Agent 03 (Planner) | Strategic Planner |
 | ⚙️ Agent 04 (Executor) | Task Executor |
@@ -41,46 +39,49 @@
 ```bash
 git clone https://github.com/mulkymalikuldhrs/Agentic-AI-System_OLD.git
 cd Agentic-AI-System_OLD
+pip install -r requirements.txt
+
+# Set required environment variable for credential manager
+export AGENTIC_AI_MASTER_PASSWORD="your_master_password"
+
 python start_system.py
 # Access: http://localhost:5000
 ```
 
 ### Tech Stack
 - **Core**: Python 3.12+, Flask
-- **AI**: OpenAI GPT, HuggingFace
-- **Security**: AES-256, PBKDF2
+- **AI**: OpenAI GPT, HuggingFace (requires API keys)
+- **Security**: Fernet encryption (AES-256), PBKDF2
 - **Memory**: SQLite + External APIs
-- **Deployment**: Docker, K8s, Railway, Vercel, Netlify, Firebase, AWS
+- **Deployment**: Docker, K8s, Railway, Vercel, Netlify, Firebase, AWS (configurations provided, not tested)
 
 ---
 
 ## 🇮🇩 Bahasa Indonesia
 
-**Agentic AI System** adalah platform multi-agent intelligence yang tidak hanya mengkoordinasi agent yang ada, tetapi **menciptakan agent AI baru yang benar-benar berfungsi secara dinamis**. Sistem ini menggabungkan teknologi AI canggih, keamanan tingkat militer, dan kemampuan deployment enterprise.
+**Agentic AI System** adalah kerangka kerja multi-agent eksperimental yang dibangun dengan Python dan Flask. Ini adalah proyek pembelajaran/penelitian dan tidak boleh digunakan di lingkungan produksi.
 
-### Fitur Terobosan
-- 🤖 **Pembuatan Agent AI Nyata** — Menciptakan agent AI yang benar-benar bekerja
-- 🔒 **Keamanan Tingkat Militer** — Enkripsi AES-256 untuk manajemen kredensial
-- 🌐 **Otomasi Web Lanjutan** — Login/registrasi otomatis ke website manapun
-- 🧠 **Sistem Memori Persisten** — SQLite dengan pengayaan pengetahuan dari API eksternal
-- 🚀 **Deployment Multi-Platform** — Siap untuk 7+ platform utama
-- 🔌 **Integrasi Platform Real-time** — GitHub, Google Services, OpenAI, HuggingFace
-- 📊 **Monitoring Enterprise** — Analitik real-time dan monitoring kesehatan sistem
+### Fitur
+- 🤖 **Kerangka Agent** — Kelas dasar dan pola pabrik untuk membuat agent AI
+- 🔒 **Manajer Kredensial** — Penyimpanan kredensial terenkripsi (memerlukan env var master password)
+- 🌐 **Otomasi Web** — Modul otomasi login/registrasi web eksperimental
+- 🧠 **Memori Persisten** — Penyimpanan berbasis SQLite
+- 📊 **Dasbor Web** — UI berbasis Flask untuk monitoring agent
+- 🔌 **Integrasi Platform** — Stub untuk GitHub, Google, OpenAI, HuggingFace
 
 ---
 
 ## 🇨🇳 中文
 
-**Agentic AI System** 是一个突破性的多代理智能平台，不仅协调现有代理，还能**动态创建新的、功能完整的AI代理**。系统将先进AI技术、军事级安全和企业部署能力结合在一个革命性平台中。
+**Agentic AI System** 是一个基于 Python 和 Flask 构建的实验性多代理框架。这是一个学习/研究项目，不应在生产环境中使用。
 
-### 突破性功能
-- 🤖 **真正的AI代理创建** — 动态创建实际工作的AI代理
-- 🔒 **军事级安全** — AES-256加密凭证管理
-- 🌐 **高级Web自动化** — 自动登录/注册任何网站
-- 🧠 **持久内存系统** — SQLite + 外部API知识增强
-- 🚀 **多平台部署** — 支持7+主要平台
-- 🔌 **实时平台集成** — GitHub、Google服务、OpenAI、HuggingFace
-- 📊 **企业监控** — 实时分析和系统健康监控
+### 功能
+- 🤖 **代理框架** — 用于创建AI代理的基类和工厂模式
+- 🔒 **凭证管理器** — 加密凭证存储（需要主密码环境变量）
+- 🌐 **Web自动化** — 实验性Web登录/注册自动化模块
+- 🧠 **持久内存** — 基于SQLite的存储
+- 📊 **Web仪表板** — 基于Flask的监控界面
+- 🔌 **平台集成** — GitHub、Google、OpenAI、HuggingFace 存根
 
 ---
 
@@ -96,7 +97,7 @@ We welcome contributions from everyone! Whether you're a beginner or an experien
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
-**Contact:** mulkymalikuldhaher@email.com | Mulky Malikul Dhaher
+**Contact:** mulkymalikudhr@mail.com | Mulky Malikul Dhaher
 
 ---
 
@@ -112,7 +113,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ## 📬 Contact
 
-**Mulky Malikul Dhaher** — [mulkymalikuldhaher@email.com](mailto:mulkymalikuldhaher@email.com)
+**Mulky Malikul Dhaher** — [mulkymalikudhr@mail.com](mailto:mulkymalikudhr@mail.com)
 
 GitHub: [https://github.com/mulkymalikuldhrs](https://github.com/mulkymalikuldhrs)
 
@@ -122,4 +123,4 @@ GitHub: [https://github.com/mulkymalikuldhrs](https://github.com/mulkymalikuldhr
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
-Copyright © 2026 Mulky Malikul Dhaher. All rights reserved.
+Copyright © 2025 Mulky Malikul Dhaher. All rights reserved.
