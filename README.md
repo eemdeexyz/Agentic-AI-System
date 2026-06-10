@@ -1,126 +1,142 @@
-# 🤖 Agentic AI System — Multi-Agent Framework (Archived)
+<!-- BANNER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:2d2d44,100:3d3d5c&fontColor=94a3b8&descColor=64748b&height=220&section=header&text=Agentic%20AI%20System&fontSize=55&desc=Legacy+Multi-Agent+System+(Archived)&animation=fadeIn" />
 
-[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](LICENSE)
-[![Flask](https://img.shields.io/badge/Flask-2.3+-green.svg)](https://flask.palletsprojects.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<!-- TYPING SVG -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=94A3B8&center=true&vCenter=true&width=600&lines=Archived+%7C+Legacy+Project;Python+%2B+Flask+Multi-Agent+System;Superseded+by+AI-MultiColony-Ecosystem;Preserved+for+Reference+Only" alt="Typing SVG" />
+  </a>
+</div>
 
-> ⚠️ This is an archived/experimental project. It is not production-ready and is provided for educational purposes only.
+<br/>
+
+<!-- BADGES -->
+<div align="center">
+
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
+[![Flask](https://img.shields.io/badge/Flask-3.x-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Archived](https://img.shields.io/badge/Status-Archived-64748B?style=for-the-badge)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
+
+</div>
 
 ---
 
-## 🇬🇧 English
+## Overview
 
-**Agentic AI System** is an experimental multi-agent framework built with Python and Flask. It explores concepts of dynamic agent creation, credential management, and multi-agent coordination. This is a learning/research project and should not be used in production environments.
+**Agentic AI System** is a **legacy, archived** multi-agent AI system built with Python and Flask. This was an earlier iteration of a multi-agent architecture that has since been superseded by the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem) project.
 
-### Features
-- 🤖 **Agent Framework** — Base classes and factory patterns for creating AI agents
-- 🔒 **Credential Manager** — Encrypted credential storage using Fernet/AES (requires master password env var)
-- 🌐 **Web Automation** — Experimental web login/registration automation module
-- 🧠 **Persistent Memory** — SQLite-based storage with knowledge enrichment
-- 📊 **Web Dashboard** — Flask-based UI for monitoring and managing agents
-- 🔌 **Platform Integrations** — Stubs for GitHub, Google, OpenAI, HuggingFace
+This repository is preserved for reference, historical context, and educational purposes. It is **no longer actively maintained**.
 
-### Specialized Agents
-| Agent | Role |
-|-------|------|
-| 🎯 Agent Base | Master Controller & Task Coordination |
-| 🚀 Launcher Agent | System Orchestrator |
-| 🏭 Dynamic Agent Factory | Spawns agents on demand |
-| 🤖 Advanced Agent Creator | Creates AI agents programmatically |
-| 🌐 Web Automation Agent | Automated web interactions |
-| 📊 Agent 02 (Meta-Spawner) | Performance Monitor |
-| 📋 Agent 03 (Planner) | Strategic Planner |
-| ⚙️ Agent 04 (Executor) | Task Executor |
-| 🎨 Agent 05 (Designer) | Visual Creator |
-| 🔬 Agent 06 (Specialist) | Domain Expert |
+## Features (Historical)
 
-### Quick Start
+### Multi-Agent Architecture
+- Multiple specialized agents with distinct roles and capabilities
+- Agent communication protocol for inter-agent messaging
+- Task distribution and coordination engine
+- Basic agent lifecycle management (spawn, execute, terminate)
+
+### Flask API Server
+- RESTful API for agent interaction and control
+- WebSocket support for real-time agent communication
+- Authentication and session management
+- Admin dashboard for monitoring agent activity
+
+### Agent Capabilities
+- Configurable agent behaviors via JSON profiles
+- Tool/function calling framework for agent actions
+- Memory and context management per agent
+- Basic planning and task decomposition
+
+## Honest Notes
+
+> **Before you explore this codebase:**
+
+- **Archived/Legacy** — This project is archived and no longer maintained. It may contain outdated dependencies, known bugs, and architectural decisions that have been improved upon in later projects.
+- **See AI-MultiColony-Ecosystem Instead** — The concepts and architecture from this project have been evolved and significantly improved in the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem). For active development, use that project instead.
+- **Not Production Ready** — Even in its active period, this was a research prototype. Do not use this for production systems.
+- **Dependencies May Be Outdated** — Python packages and Flask extensions referenced may have newer versions with breaking changes. Pin versions if you need to run this.
+- **No Security Audits** — This code was never audited for security. Do not expose the Flask server to the internet.
+
+## Quick Start (For Reference Only)
+
+### Prerequisites
+- Python 3.11+
+- pip
+
+### Installation
 
 ```bash
 git clone https://github.com/mulkymalikuldhrs/Agentic-AI-System_OLD.git
 cd Agentic-AI-System_OLD
-pip install -r requirements.txt
-
-# Set required environment variable for credential manager
-export AGENTIC_AI_MASTER_PASSWORD="your_master_password"
-
-python start_system.py
-# Access: http://localhost:5000
+pip install -r requirements.txt  # May require version pinning
 ```
 
-### Tech Stack
-- **Core**: Python 3.12+, Flask
-- **AI**: OpenAI GPT, HuggingFace (requires API keys)
-- **Security**: Fernet encryption (AES-256), PBKDF2
-- **Memory**: SQLite + External APIs
-- **Deployment**: Docker, K8s, Railway, Vercel, Netlify, Firebase, AWS (configurations provided, not tested)
+### Running
+
+```bash
+python app.py
+```
+
+The Flask server will start at `http://localhost:5000`.
+
+## Project Structure
+
+```
+Agentic-AI-System_OLD/
+├── app.py               # Flask application entry point
+├── agents/
+│   ├── base.py          # Base agent class
+│   ├── coordinator.py   # Agent coordination logic
+│   ├── specialist/      # Specialized agent implementations
+│   └── profiles/        # Agent configuration profiles
+├── api/
+│   ├── routes/          # API endpoint definitions
+│   └── websocket.py     # WebSocket handler
+├── core/
+│   ├── memory/          # Agent memory management
+│   ├── planning/        # Task planning engine
+│   └── communication/   # Inter-agent messaging
+├── config/              # Configuration files
+└── tests/               # Test suites (may be incomplete)
+```
+
+## Migration Guide
+
+If you're looking to build on the concepts from this project, here's how the architecture evolved:
+
+| Agentic AI System (OLD) | AI-MultiColony-Ecosystem |
+|--------------------------|--------------------------|
+| Single Flask server | Modular microservices |
+| Basic agent profiles | Colony-based agent ecosystems |
+| Simple task queue | Advanced orchestration engine |
+| In-memory agent state | Persistent state management |
+| Basic WebSocket | Full real-time event system |
+
+## Contributing
+
+This project is **archived and not accepting contributions**. Please direct all efforts to the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem) instead.
+
+## Disclaimer
+
+This is archived legacy code preserved for reference. It is not maintained, may contain security vulnerabilities, and should not be used in production. For the current version of this concept, see [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem).
+
+## License
+
+**MIT License** — see [LICENSE](./LICENSE) for details.
+
+## Author
+
+<div align="center">
+
+**Mulky Malikul Dhaher**
+
+[![GitHub](https://img.shields.io/badge/GitHub-mulkymalikuldhrs-181717?style=flat-square&logo=github)](https://github.com/mulkymalikuldhrs)
+[![Email](https://img.shields.io/badge/Email-mulkymalikudhr@mail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mulkymalikudhr@mail.com)
+
+</div>
 
 ---
 
-## 🇮🇩 Bahasa Indonesia
-
-**Agentic AI System** adalah kerangka kerja multi-agent eksperimental yang dibangun dengan Python dan Flask. Ini adalah proyek pembelajaran/penelitian dan tidak boleh digunakan di lingkungan produksi.
-
-### Fitur
-- 🤖 **Kerangka Agent** — Kelas dasar dan pola pabrik untuk membuat agent AI
-- 🔒 **Manajer Kredensial** — Penyimpanan kredensial terenkripsi (memerlukan env var master password)
-- 🌐 **Otomasi Web** — Modul otomasi login/registrasi web eksperimental
-- 🧠 **Memori Persisten** — Penyimpanan berbasis SQLite
-- 📊 **Dasbor Web** — UI berbasis Flask untuk monitoring agent
-- 🔌 **Integrasi Platform** — Stub untuk GitHub, Google, OpenAI, HuggingFace
-
----
-
-## 🇨🇳 中文
-
-**Agentic AI System** 是一个基于 Python 和 Flask 构建的实验性多代理框架。这是一个学习/研究项目，不应在生产环境中使用。
-
-### 功能
-- 🤖 **代理框架** — 用于创建AI代理的基类和工厂模式
-- 🔒 **凭证管理器** — 加密凭证存储（需要主密码环境变量）
-- 🌐 **Web自动化** — 实验性Web登录/注册自动化模块
-- 🧠 **持久内存** — 基于SQLite的存储
-- 📊 **Web仪表板** — 基于Flask的监控界面
-- 🔌 **平台集成** — GitHub、Google、OpenAI、HuggingFace 存根
-
----
-
-## 🤝 Contributors Welcome
-
-We welcome contributions from everyone! Whether you're a beginner or an experienced developer, there are many ways to contribute:
-
-- 🐛 Report bugs and issues
-- 💡 Suggest new features or agents
-- 🔧 Submit pull requests with improvements
-- 📖 Improve documentation
-- 🧪 Add tests and examples
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
-
-**Contact:** mulkymalikudhr@mail.com | Mulky Malikul Dhaher
-
----
-
-## ⚠️ Disclaimer
-
-**EN (English):** For Education Purpose Only. All content, code, and documentation provided in this repository are intended solely for educational and research purposes. Nothing in this repository constitutes financial, investment, legal, or professional advice. The authors and contributors assume no responsibility or liability for any losses, damages, or consequences arising from the use of this software or information provided herein. We do not bear any responsibility or risk for how this software is used.
-
-**ID (Bahasa Indonesia):** Untuk Tujuan Pendidikan Saja. Semua konten, kode, dan dokumentasi dalam repositori ini hanya ditujukan untuk tujuan pendidikan dan penelitian. Penulis dan kontributor tidak bertanggung jawab atas risiko atau kerugian apa pun yang timbul dari penggunaan perangkat lunak atau informasi yang disediakan. Kami tidak menanggung tanggung jawab atau risiko atas penggunaan perangkat lunak ini.
-
-**CN (中文):** 仅供教育目的。本仓库中的所有内容、代码和文档仅用于教育和研究目的。作者和贡献者对因使用本软件或提供的信息而造成的任何损失、损害或后果不承担任何责任。我们不对本软件的使用方式承担任何责任或风险。
-
----
-
-## 📬 Contact
-
-**Mulky Malikul Dhaher** — [mulkymalikudhr@mail.com](mailto:mulkymalikudhr@mail.com)
-
-GitHub: [https://github.com/mulkymalikuldhrs](https://github.com/mulkymalikuldhrs)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-Copyright © 2025 Mulky Malikul Dhaher. All rights reserved.
+<!-- FOOTER BANNER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:2d2d44,100:3d3d5c&fontColor=94a3b8&descColor=64748b&height=120&section=footer&text=&fontSize=0" />
