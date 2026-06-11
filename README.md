@@ -1,4 +1,3 @@
-<img src="docs/banner.png" width="100%">
 
 <!-- CAPSULE-RENDER HEADER -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:2d2d44,100:3d3d5c&fontColor=6b7280&descColor=4b5563&height=220&section=header&text=Agentic%20AI%20System&fontSize=55&desc=Legacy+Multi-Agent+System+(Archived)&animation=fadeIn" />
