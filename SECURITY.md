@@ -1,47 +1,31 @@
-# Security Policy — Agentic-AI-System_OLD
+# Security Policy
 
-## 🇬🇧 English
+## Reporting a Vulnerability
 
-### Reporting a Vulnerability
-If you discover a security vulnerability in **Agentic-AI-System_OLD**, please report it by emailing **mulkymalikuldhaher@email.com**.
+We take security seriously. If you discover a vulnerability in this project, please report it responsibly.
 
-Please do NOT create a public GitHub issue for security vulnerabilities.
+### How to Report
+
+1. **Do not** create a public GitHub issue for the vulnerability
+2. Email us at mulkymalikuldhr@agentmail.to with details
+3. Include steps to reproduce, affected versions, and potential impact
 
 ### What to Include
+
 - Description of the vulnerability
 - Steps to reproduce
+- Affected versions
 - Potential impact
 - Suggested fix (if available)
 
 ### Response Time
-We will acknowledge your report within 48 hours and provide a detailed response within 7 days.
 
-## 🇮🇩 Bahasa Indonesia
+We aim to acknowledge reports within 48 hours and provide a fix within 7 days for critical issues.
 
-### Melaporkan Kerentanan
-Jika Anda menemukan kerentanan keamanan di **Agentic-AI-System_OLD**, silakan laporkan melalui email **mulkymalikuldhaher@email.com**.
+### Disclosure Policy
 
-### Apa yang Disertakan
-- Deskripsi kerentanan
-- Langkah-langkah untuk mereproduksi
-- Dampak potensial
-- Perbaikan yang disarankan (jika ada)
+- We practice responsible disclosure
+- We will credit researchers who report vulnerabilities (unless they prefer to remain anonymous)
+- We ask that you give us reasonable time to address the issue before public disclosure
 
-## 🇨🇳 中文
-
-### 报告漏洞
-如果您在 **Agentic-AI-System_OLD** 中发现安全漏洞，请通过电子邮件 **mulkymalikuldhaher@email.com** 报告。
-
----
-
-## ⚠️ Disclaimer
-
-**For Education Purpose Only.** All content, code, and documentation provided in this repository are intended solely for educational and research purposes. Nothing in this repository constitutes financial, investment, legal, or professional advice. The authors and contributors assume no responsibility or liability for any losses, damages, or consequences arising from the use of this software or information provided herein.
-
-**Hanya untuk Tujuan Pendidikan.** Semua konten, kode, dan dokumentasi dalam repositori ini hanya ditujukan untuk tujuan pendidikan dan penelitian. Penulis dan kontributor tidak bertanggung jawab atas risiko atau kerugian apa pun yang timbul dari penggunaan perangkat lunak atau informasi yang disediakan.
-
-**仅用于教育目的。** 本仓库中的所有内容、代码和文档仅用于教育和研究目的。作者和贡献者对因使用本软件或提供的信息而造成的任何损失、损害或后果不承担任何责任。
-
----
-
-**Contact:** Mulky Malikul Dhaher — [mulkymalikuldhaher@email.com](mailto:mulkymalikuldhaher@email.com)
+Thank you for helping keep this project secure!
