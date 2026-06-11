@@ -1,8 +1,16 @@
-<!-- BANNER -->
+<img src="docs/banner.png" width="100%">
+
+<!-- CAPSULE-RENDER HEADER -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:2d2d44,100:3d3d5c&fontColor=6b7280&descColor=4b5563&height=220&section=header&text=Agentic%20AI%20System&fontSize=55&desc=Legacy+Multi-Agent+System+(Archived)&animation=fadeIn" />
 
 <!-- ARCHIVED WARNING BANNER -->
 <div align="center">
+
+> ### ⚠️ THIS PROJECT IS ARCHIVED ⚠️
+> **This repository is no longer maintained.** It is preserved for historical reference only.
+> For the actively developed successor, see **[AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem)**.
+
+<br/>
 
 ![ARCHIVED](https://img.shields.io/badge/STATUS-ARCHIVED-6b7280?style=for-the-badge&labelColor=374151&color=6b7280)
 ![NO LONGER MAINTAINED](https://img.shields.io/badge/NO%20LONGER-MAINTAINED-991b1b?style=for-the-badge&labelColor=450a0a)
@@ -35,36 +43,44 @@
 
 ---
 
+## Overview
+
+**Agentic AI System** is a **legacy, archived** multi-agent AI system built with Python and Flask. This was an earlier iteration of a multi-agent architecture that has since been superseded by the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem) project.
+
+This repository is preserved for reference, historical context, and educational purposes. It is **no longer actively maintained**.
+
+---
+
 ## Visual Architecture
 
-### 1. Legacy Architecture — Original Simple Multi-Agent Flow
+### 1. Legacy Architecture - Original Simple Multi-Agent Flow
 
 ```mermaid
 graph TB
-    subgraph "Agentic AI System — Legacy Architecture"
+    subgraph LEGACY["Agentic AI System - Legacy Architecture"]
         direction TB
 
-        subgraph "Web Layer"
+        subgraph WEB["Web Layer"]
             FlaskApp["Flask Server<br/>:5000"]
             WSHandler["WebSocket Handler<br/>Real-time Events"]
             Templates["Jinja2 Templates<br/>Dashboard / Agents / Workflows"]
         end
 
-        subgraph "Agent Layer"
+        subgraph AGENT["Agent Layer"]
             Coordinator["Agent Coordinator<br/>Task Distribution"]
             BaseAgent["Base Agent Class<br/>Lifecycle Management"]
             Specialist["Specialist Agents<br/>Configurable Behaviors"]
             Profiles["Agent Profiles<br/>JSON Configuration"]
         end
 
-        subgraph "Core Engine"
+        subgraph CORE["Core Engine"]
             Memory["Memory Manager<br/>In-Memory State"]
             Planning["Planning Engine<br/>Task Decomposition"]
             Comms["Communication Protocol<br/>Inter-Agent Messaging"]
             Tools["Tool/Function Framework<br/>Agent Actions"]
         end
 
-        subgraph "Data"
+        subgraph DATA["Data"]
             Config["Config Files<br/>YAML / JSON"]
             Sessions["Session State<br/>In-Memory Only"]
         end
@@ -93,11 +109,11 @@ graph TB
     style Sessions fill:#7f1d1d,stroke:#dc2626,color:#fca5a5
 ```
 
-### 2. Migration Path — How This Evolved into AI-MultiColony-Ecosystem
+### 2. Migration Path - How This Evolved into AI-MultiColony-Ecosystem
 
 ```mermaid
 flowchart LR
-    subgraph "Phase 1 — Agentic AI System"
+    subgraph PHASE1["Phase 1 - Agentic AI System"]
         Flask["Flask<br/>Monolith"]
         SimpleAgents["Simple<br/>Agent Profiles"]
         InMemory["In-Memory<br/>State"]
@@ -105,13 +121,13 @@ flowchart LR
         TaskQ["Simple<br/>Task Queue"]
     end
 
-    subgraph "Phase 2 — Transition"
+    subgraph PHASE2["Phase 2 - Transition"]
         Migration["Migration<br/>Period"]
         DesignReview["Architecture<br/>Review"]
         RequirementScale["Scaling<br/>Requirements"]
     end
 
-    subgraph "Phase 3 — AI-MultiColony-Ecosystem"
+    subgraph PHASE3["Phase 3 - AI-MultiColony-Ecosystem"]
         FastAPI["FastAPI<br/>Async"]
         ColonyAgents["Colony-Based<br/>Agents"]
         Postgres["PostgreSQL<br/>+ Redis"]
@@ -157,11 +173,11 @@ flowchart LR
     style RequirementScale fill:#92400e,stroke:#f59e0b,color:#fff
 ```
 
-### 3. Comparison — Old vs New Architecture Side by Side
+### 3. Comparison - Old vs New Architecture Side by Side
 
 ```mermaid
 graph TB
-    subgraph "Agentic AI System — OLD"
+    subgraph OLD_SYS["Agentic AI System - OLD"]
         direction TB
         OldFlask["Flask Server<br/>Synchronous"]
         OldAgents["Flat Agent List<br/>No Colony Concept"]
@@ -173,7 +189,7 @@ graph TB
         OldState["Session-Based<br/>No Persistence"]
     end
 
-    subgraph "AI-MultiColony-Ecosystem — NEW"
+    subgraph NEW_SYS["AI-MultiColony-Ecosystem - NEW"]
         direction TB
         NewFast["FastAPI + Next.js 16<br/>Async + Modern UI"]
         NewColony["Colony-Based Agents<br/>Specialized Roles"]
@@ -215,12 +231,6 @@ graph TB
 
 ---
 
-## Overview
-
-**Agentic AI System** is a **legacy, archived** multi-agent AI system built with Python and Flask. This was an earlier iteration of a multi-agent architecture that has since been superseded by the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem) project.
-
-This repository is preserved for reference, historical context, and educational purposes. It is **no longer actively maintained**.
-
 ## Features (Historical)
 
 ### Multi-Agent Architecture
@@ -241,6 +251,8 @@ This repository is preserved for reference, historical context, and educational 
 - Memory and context management per agent
 - Basic planning and task decomposition
 
+---
+
 ## Honest Notes
 
 > **Before you explore this codebase:**
@@ -250,6 +262,8 @@ This repository is preserved for reference, historical context, and educational 
 - **Not Production Ready** — Even in its active period, this was a research prototype. Do not use this for production systems.
 - **Dependencies May Be Outdated** — Python packages and Flask extensions referenced may have newer versions with breaking changes. Pin versions if you need to run this.
 - **No Security Audits** — This code was never audited for security. Do not expose the Flask server to the internet.
+
+---
 
 ## Quick Start (For Reference Only)
 
@@ -273,6 +287,8 @@ python app.py
 
 The Flask server will start at `http://localhost:5000`.
 
+---
+
 ## Project Structure
 
 ```
@@ -294,6 +310,8 @@ Agentic-AI-System_OLD/
 └── tests/               # Test suites (may be incomplete)
 ```
 
+---
+
 ## Migration Guide
 
 If you're looking to build on the concepts from this project, here's how the architecture evolved:
@@ -310,17 +328,25 @@ If you're looking to build on the concepts from this project, here's how the arc
 | No monitoring | Prometheus + Grafana |
 | Session-based auth | Proper auth + audit trails |
 
+---
+
 ## Contributing
 
 This project is **archived and not accepting contributions**. Please direct all efforts to the [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem) instead.
+
+---
 
 ## Disclaimer
 
 This is archived legacy code preserved for reference. It is not maintained, may contain security vulnerabilities, and should not be used in production. For the current version of this concept, see [AI-MultiColony-Ecosystem](https://github.com/mulkymalikuldhrs/AI-MultiColony-Ecosystem).
 
+---
+
 ## License
 
 **MIT License** — see [LICENSE](./LICENSE) for details.
+
+---
 
 ## Author
 
